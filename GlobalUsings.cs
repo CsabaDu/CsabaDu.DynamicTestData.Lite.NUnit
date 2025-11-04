@@ -6,5 +6,4 @@ global using CsabaDu.DynamicTestData.Core.TestDataTypes.Interfaces;
 global using CsabaDu.DynamicTestData.Lite.DynamicDataSources;
 global using CsabaDu.DynamicTestData.Lite.NUnit.Statics;
 global using NUnit.Framework;
-global using System.Diagnostics.CodeAnalysis;
 global using static CsabaDu.DynamicTestData.Core.TestDataTypes.TestDataFactory;

@@ -27,7 +27,7 @@ public static class Extensions
         testCaseData.TypeArgs = argsCode switch
         {
             ArgsCode.Instance => [testDataType],
-            ArgsCode.Properties => getGenericTypes(),
+            ArgsCode.Properties => getGenericArgs(),
             _ => null,
         };
 
@@ -36,7 +36,7 @@ public static class Extensions
             : testCaseData;
 
         #region Local methods
-        Type[] getGenericTypes()
+        Type[] getGenericArgs()
         {
             var genericArgs =
                 testDataType.GetGenericArguments();

@@ -10,7 +10,7 @@ public static class Extensions
         ArgsCode argsCode,
         string? testMethodName = null)
     {
-        var parameters = TestDataToParams(
+        var testDataToParams = TestDataToParams(
             testData,
             argsCode,
             PropsCode.Throws,
@@ -19,7 +19,7 @@ public static class Extensions
             testMethodName,
             testCaseName);
         var testDataType = testData.GetType();
-        var testCaseData = new TestCaseData(parameters)
+        var testCaseData = new TestCaseData(testDataToParams)
             .SetDescription(testCaseName)
             .SetName(displayName);
         var testDataReturns = testData as ITestDataReturns;

@@ -5,10 +5,11 @@ namespace CsabaDu.DynamicTestData.Lite.NUnit.Statics;
 
 public static class Extensions
 {
-    public static TestCaseData ToTestCaseData(
-        this ITestData testData,
+    public static TestCaseData ToTestCaseData<TTestData>(
+        this TTestData testData,
         ArgsCode argsCode,
-        string? testMethodName = null)
+        string? testMethodName)
+    where TTestData : notnull, ITestData
     {
         var testDataToParams = TestDataToParams(
             testData,

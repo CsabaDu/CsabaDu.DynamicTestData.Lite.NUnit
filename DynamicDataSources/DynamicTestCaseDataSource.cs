@@ -7,7 +7,7 @@ public abstract class DynamicTestCaseDataSource(ArgsCode argsCode)
 : DynamicNamedDataSource<TestCaseData>(argsCode, PropsCode.Throws)
 {
     #region Methods
-    protected override TestCaseData TestDataToParams<TTestData>(
+    protected override TestCaseData Convert<TTestData>(
         TTestData testData,
         string? testMethodName)
     => testData.ToTestCaseData(

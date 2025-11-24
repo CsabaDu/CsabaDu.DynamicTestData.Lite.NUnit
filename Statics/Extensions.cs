@@ -11,8 +11,7 @@ public static class Extensions
         string? testMethodName)
     where TTestData : notnull, ITestData
     {
-        var testDataToParams = TestDataToParams(
-            testData,
+        var convertedTestData = testData.ToParams(
             argsCode,
             PropsCode.Throws,
             out string testCaseName);
@@ -20,7 +19,7 @@ public static class Extensions
             testMethodName,
             testCaseName);
         var testDataType = testData.GetType();
-        var testCaseData = new TestCaseData(testDataToParams)
+        var testCaseData = new TestCaseData(convertedTestData)
             .SetDescription(testCaseName)
             .SetName(displayName);
         var testDataReturns = testData as ITestDataReturns;

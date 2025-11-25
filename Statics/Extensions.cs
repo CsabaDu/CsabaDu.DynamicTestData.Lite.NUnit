@@ -13,12 +13,12 @@ public static class Extensions
     {
         var convertedTestData = testData.ToParams(
             argsCode,
-            PropsCode.Throws,
+            PropsCode.Returns,
             out string testCaseName);
         var displayName = GetDisplayName(
             testMethodName,
             testCaseName);
-        var testDataType = testData.GetType();
+        var testDataType = typeof(TTestData);
         var testCaseData = new TestCaseData(convertedTestData)
             .SetDescription(testCaseName)
             .SetName(displayName);

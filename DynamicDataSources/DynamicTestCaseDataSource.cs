@@ -4,7 +4,7 @@
 namespace CsabaDu.DynamicTestData.Lite.NUnit.DynamicDataSources;
 
 public abstract class DynamicTestCaseDataSource(ArgsCode argsCode)
-: DynamicNamedDataSource<TestCaseData>(argsCode, PropsCode.Throws)
+: DynamicNamedDataSource<TestCaseData>(argsCode, PropsCode.Returns)
 {
     #region Methods
     protected override TestCaseData Convert<TTestData>(

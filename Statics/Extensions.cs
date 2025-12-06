@@ -22,7 +22,7 @@ public static class Extensions
         var testCaseData = new TestCaseData(convertedTestData)
             .SetDescription(testCaseName)
             .SetName(displayName);
-        var testDataReturns = testData as ITestDataReturns;
+        var testDataReturns = testData as IReturns;
         bool isReturns = testDataReturns is not null;
         testCaseData.TypeArgs = argsCode switch
         {

@@ -22,8 +22,8 @@ public static class Extensions
         var testCaseData = new TestCaseData(convertedTestData)
             .SetDescription(testCaseName)
             .SetName(displayName);
-        var testDataReturns = testData as IReturns;
-        bool isReturns = testDataReturns is not null;
+        var returns = testData as IReturns;
+        bool isReturns = returns is not null;
         testCaseData.TypeArgs = argsCode switch
         {
             ArgsCode.Instance => [testDataType],
@@ -32,7 +32,7 @@ public static class Extensions
         };
 
         return isReturns ?
-            testCaseData.Returns(testDataReturns!.GetExpected())
+            testCaseData.Returns(returns!.GetExpected())
             : testCaseData;
 
         #region Local methods

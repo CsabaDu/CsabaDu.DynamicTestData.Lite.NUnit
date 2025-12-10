@@ -24,6 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CsabaDu.DynamicTestData.Core.NUnit\CsabaDu.DynamicTestData.Core.NUnit.csproj" />
     <ProjectReference Include="..\CsabaDu.DynamicTestData.Lite\CsabaDu.DynamicTestData.Lite.csproj" />
   </ItemGroup>
 

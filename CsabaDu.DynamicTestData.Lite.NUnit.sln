@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsabaDu.DynamicTestData.Lit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsabaDu.DynamicTestData.Lite", "..\CsabaDu.DynamicTestData.Lite\CsabaDu.DynamicTestData.Lite.csproj", "{904D4CF5-16E8-A0AA-3E79-B63E7FCBD619}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsabaDu.DynamicTestData.Core.NUnit", "..\CsabaDu.DynamicTestData.Core.NUnit\CsabaDu.DynamicTestData.Core.NUnit.csproj", "{33A02D4A-B87B-3531-FAA4-24E8775D935F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{904D4CF5-16E8-A0AA-3E79-B63E7FCBD619}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{904D4CF5-16E8-A0AA-3E79-B63E7FCBD619}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{904D4CF5-16E8-A0AA-3E79-B63E7FCBD619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33A02D4A-B87B-3531-FAA4-24E8775D935F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33A02D4A-B87B-3531-FAA4-24E8775D935F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33A02D4A-B87B-3531-FAA4-24E8775D935F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33A02D4A-B87B-3531-FAA4-24E8775D935F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
